@@ -10,16 +10,39 @@
   </head>
   <body>
     <!-- Image and text -->
-    <nav class="navbar navbar-dark bg-dark">
-      <a class="navbar-brand" href="#">
+    <nav class="navbar navbar-dark bg-dark navbar navbar-expand-lg ">
+      <a class="navbar-brand " href="#">
         <img src="./img/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
         JACKS
       </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse s" id="navbarNav">
+        <ul class="navbar-nav ml-auto navbar-right text-center">
+          <li class="nav-item active ">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About Us</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Order</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
     </nav>
     <div class="hero  ">
       <div class="bg center flex text-center justify-content-center">
         <div class="">
-          <h1 class="text-white display-3">Come have a glorious meal today!</h1>
+          <h1 class="text-white display-3 mb-5">Come have a glorious meal Today!</h1>
           <div class="">
             <button type="button" class="order btn btn-lg " name="button">Order</button>
             <button type="button" class="reserve btn btn-lg " name="button">Reserve Table</button>
@@ -27,10 +50,51 @@
         </div>
       </div>
     </div>
-    <div class="container">
-
-      <h1>Hello</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <div class="intro text-center">
+      <div class="container mt-5 mb-5">
+        <h1 class="display-4">Jacky's Diner</h1>
+        <p>A restaurant (/ˈrɛstərənt/ or /ˈrɛstərɒnt/; French: [ʀɛs.to.ʁɑ̃], or an eatery, is a business which prepares and serves food and drinks to customers in exchange for money. Meals are generally served and eaten on the premises, but many restaurants also offer take-out and food delivery services, and some offer only take-out and delivery. Restaurants vary greatly in appearance and offerings, including a wide variety of cuisines and service models ranging from inexpensive fast food restaurants and cafeterias to mid-priced family restaurants, to high-priced luxury establishments.</p>
+      </div>
+    </div>
+    <div class="featured">
+      <div class="row text-center">
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="card ">
+            <div class="card-body">
+              <h6 class="card-subtitle mb-2 text-muted mt-4"><img src="./img/quality.png" height="80" alt=""></h6>
+              <h4 class="card-title mb-3">Quality</h4>
+              <p class="card-text">It is brought about by strict and consistent commitment to certain standards that achieve uniformity of a product in order to satisfy specific customer or user requirements.</p>
+            </div>
+          </div>          
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="card ">
+            <div class="card-body">
+              <h6 class="card-subtitle mb-2 text-muted mt-4"><img src="./img/yum.png" height="80" alt=""></h6>
+              <h4 class="card-title mb-3">Taste</h4>
+              <p class="card-text">Taste is the sensation produced when a substance in the mouth reacts chemically with taste receptor cells located on taste buds in the oral cavity, mostly on the tongue. </p>
+            </div>
+          </div>          
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="card ">
+            <div class="card-body">
+              <h6 class="card-subtitle mb-2 text-muted mt-4"><img src="./img/fresh.png" height="80" alt=""></h6>
+              <h4 class="card-title mb-3">Fresh</h4>
+              <p class="card-text">The definition of fresh is something recently harvested, recently produced or newly made. An example of fresh is just squeezed orange juice.</p>
+            </div>
+          </div>          
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="card ">
+            <div class="card-body">
+              <h6 class="card-subtitle mb-2 text-muted mt-4"><img src="./img/budget.png" height="80" alt=""></h6>
+              <h4 class="card-title mb-3">Budget</h4>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>          
+        </div>
+      </div>
     </div>
     <script src="./js/jquery.min.js" charset="utf-8"></script>
     <script src="./js/popper.js" charset="utf-8"></script>

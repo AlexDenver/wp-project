@@ -17,7 +17,7 @@ body{
 }
 .hero h1{
   font-family: serif !important;
-  text-transform: lowercase;
+  /*text-transform: lowercase;*/
 }
 .order, .reserve {
     background: none;
@@ -29,4 +29,10 @@ body{
   background: #ecf0f1;
   transition: 0.5s ease;
   color: #3a3636;
+}
+.intro{
+  background: #ecf0f1;
+}
+.featured{
+  /*background: #343a40;*/
 }
