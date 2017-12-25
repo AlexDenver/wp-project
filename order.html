@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./css/webfont/css/fontawesome-all.min.css">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/clean-input.css">
   </head>
   <body>
     <!-- Image and text -->
@@ -42,11 +43,70 @@
     </nav>
 
     <div class="container-fluid">
-      <div class="controls">
-        
+      <div class="controls mt-5 mb-5">
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="Search for..." aria-label="Search for...">
+          <span class="input-group-btn">
+            <button class="btn btn-secondary" type="button">Go!</button>
+          </span>
+        </div>
+        <div class="mt-3 row text-center">
+          <div class="col-lg-4">
+          <!-- Rounded switch -->
+          <p>
+            <span class="pb-4">Display Non-Veg Dishes</span><br>
+            <label class="switch">
+              <input type="checkbox" name="veg">
+              <span class="slider round"></span>
+            </label>
+          </p>
+          </div>
+          <div class="col-lg-4 text-left">
+            <label class="fcontainer">Starters
+              <input type="checkbox" name="starter" checked="checked" value="s">
+              <span class="checkmark fas" ></span>
+            </label>
+
+            <label class="fcontainer">Main-Course
+              <input type="checkbox" name="main" checked value="m">
+              <span class="checkmark fas" ></span>
+            </label>
+
+            <label class="fcontainer">Desserts
+              <input type="checkbox" name="dessert" checked value="d">
+              <span class="checkmark fas" ></span>
+            </label>
+
+            <!-- <label class="fcontainer">All
+              <input type="checkbox">
+              <span class="checkmark fas"></span>
+            </label> -->
+          </div>
+          <div class="col-lg-4 text-left">
+            <label class="fcontainer spicy">Regular
+              <input type="checkbox" name="spicy" checked value="1">
+              <span class="checkmark fas"></span>
+            </label>
+
+            <label class="fcontainer spicy">Spicy
+              <input type="checkbox" name="spicy" checked value="2">
+              <span class="checkmark fas"></span>
+            </label>
+
+            <label class="fcontainer spicy">Extra-spicy
+              <input type="checkbox" name="spicy" checked value="4">
+              <span class="checkmark fas"></span>
+            </label>
+
+          </div>
+        </div>
       </div>
     </div>
+    <div class="dishes">
+      <div class="col-md-4">
 
+      </div>
+    </div>
     <div class="footer">
       <div class="container-fluid">
   			<div class="row">
@@ -121,5 +181,6 @@
     <script src="./js/jquery.min.js" charset="utf-8"></script>
     <script src="./js/popper.js" charset="utf-8"></script>
     <script src="./js/bootstrap.min.js" charset="utf-8"></script>
+    <script src="./js/script.js" charset="utf-8"></script>
   </body>
 </html>
