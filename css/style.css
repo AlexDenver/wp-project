@@ -36,3 +36,70 @@ body{
 .featured{
   /*background: #343a40;*/
 }
+.carousel-content {
+    display:flex;
+    align-items:center;
+}
+
+#text-carousel {
+  width: 100%;
+  height: auto;
+  padding: 50px;
+}
+.reviews{
+  background: #343a40;
+}
+.text-white{
+  color: #ecf0f1 !important;
+}
+.footer h3{
+  margin: 20px 0;
+  padding: 15px 10px;
+  border: 2px solid;
+  border-left: 0;
+  border-right: 0;
+}
+/*.footer .col-xs-12:nth-of-type(2) h3 {
+    text-align: center;
+}
+.footer .col-xs-12:last-child h3 {
+    text-align: right !important;
+}*/
+.f-logo {
+  width: 70%;
+  margin: .7em auto;
+  overflow: hidden;
+  text-align: center;
+  font-weight:300;
+  color: #343a40;
+}
+.f-logo:before, .f-logo:after {
+  content: "";
+  display: inline-block;
+  width: 50%;
+  margin: 0 .5em 0 -55%;
+  vertical-align: middle;
+  border-bottom: 2px solid;
+}
+.f-logo:after {
+  margin: 0 -55% 0 .5em;
+}
+.f-logo span {
+  display: inline-block;
+  vertical-align: middle;
+}
+.f-text{
+  letter-spacing: 7px;
+  display: inline-block;
+  font-weight: 900;
+  margin-right: -7px;
+}
+.navbar-brand{
+  letter-spacing: 6px;
+}
+a.nav-link {
+    letter-spacing: 4px;
+}
+p{
+  letter-spacing: 1.5px;
+}
