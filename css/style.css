@@ -138,8 +138,13 @@ img.g-scale {
     filter: grayscale(100%);
     transition: 0.7s ease;
 }
-img.g-scale:hover{
+img.g-scale:hover, .dish:hover img.g-scale{
   -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
   filter: grayscale(0%);
   transition: 0.7s ease;
+}
+.controls {
+    border-bottom: 4px solid #343a40;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.12), 0 1px 2px 0 rgba(0,0,0,.24)
+
 }

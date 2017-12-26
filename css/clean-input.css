@@ -101,7 +101,7 @@ input:checked + .slider:before {
   background-color: #343a40;
 }
 
-.spicy.fcontainer:first-child:hover input:checked ~ .checkmark {
+.spicy.fcontainer:nth-of-type(1):hover input:checked ~ .checkmark {
   background-color: #f1c40f;
 }
 .spicy.fcontainer:nth-of-type(2):hover input:checked ~ .checkmark {
@@ -110,7 +110,10 @@ input:checked + .slider:before {
 .spicy.fcontainer:last-child:hover input:checked ~ .checkmark {
   background-color: #e74c3c;
 }
-
+.switch input:checked + .slider:before {
+    content: '\f00c';
+    padding: 5px;
+}
 /* Create the checkmark/indicator (hidden when not checked) */
 .checkmark:after {
   content: "";
@@ -129,4 +132,20 @@ input:checked + .slider:before {
     content: '\f00c';
     color: white;
     font-size: 1rem;
+}
+.dish .row{
+  background: #e3e6e6;
+  margin: -20px;
+  padding: 15px;
+  margin-top: -10px;
+}
+i.fas.fa-fire {
+    margin: 3px;
+}
+.dish:hover .spice{
+  color: #e74c3c;
+  transition: 0.7s ease;
+}
+.dish{
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,.12), 0 1px 2px 0 rgba(0,0,0,.24)
 }

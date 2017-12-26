@@ -1,21 +1,21 @@
 [{
   "name": "Chilli Chicken",
   "servings": 2,
-  "description": "Chilli chicken is a popular Indo-Chinese dish of chicken. In India, this may include a variety of dry chicken preparations. Though mainly boneless chicken is used in this dish, some people also recommend to use boned chicken too. ",
+  "description": "Chilli chicken is a popular Indo-Chinese dish of chicken. ",
   "price": 175,
   "veg": false,
-  "type": "main",
+  "type": "starter",
   "spicy": 2,
   "rating": 3,
   "img": "0chilly.jpg"
   },{
     "name": "Gobi Manchurian",
     "servings": 2,
-    "description": "Chilli chicken is a popular Indo-Chinese dish of chicken. In India, this may include a variety of dry chicken preparations. Though mainly boneless chicken is used in this dish, some people also recommend to use boned chicken too. ",
+    "description": "Gobi Manchurian is a popular Indo-Chinese dish of chicken.",
     "price": 175,
-    "veg": false,
-    "type": "main",
-    "spicy": 1,
+    "veg": true,
+    "type": "starter",
+    "spicy": 4,
     "rating": 3,
     "img": "1gobi.jpg"
     }]

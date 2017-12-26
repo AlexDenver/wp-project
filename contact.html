@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="./css/webfont/css/fontawesome-all.min.css">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/clean-input.css">
   </head>
   <body>
     <!-- Image and text -->
@@ -25,12 +24,12 @@
           <li class="nav-item ">
             <a class="nav-link" href="index.html">Home </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="about.html">Our Story </a>
+          <li class="nav-item active">
+            <a class="nav-link" href="about.html">Our Story <span class="sr-only">(current)</span></a>
           </li>
 
-          <li class="nav-item active">
-            <a class="nav-link" href="order.html">Menu <span class="sr-only">(current)</span></a>
+          <li class="nav-item">
+            <a class="nav-link" href="order.html">Menu</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="order.html">Order</a>
@@ -42,69 +41,71 @@
       </div>
     </nav>
 
-    <div class="controls container p-4 bg-light mt-2 mb-3">
-      <div class=" mt-5 mb-5">
-        <div class="col-10 m-auto input-group">
-          <input type="text" class="btn-lg form-control" placeholder="Search..." aria-label="Search for...">
-          <span class="input-group-btn">
-            <button class="btn btn-secondary" type="button">Go!</button>
-          </span>
-        </div>
-        <div class="mt-3 row text-center">
-          <div class="col-lg-4">
-          <!-- Rounded switch -->
-            <h5 class="font-weight-bold">Display Non-Veg Dishes</h5>
-            <label class="switch">
-              <input type="checkbox" name="veg">
-              <span class="slider fas round"></span>
-            </label>
-          </div>
-          <div class="col-lg-4 text-left">
-            <h5 class="font-weight-bold">Dishes Types</h5>
-            <label class="fcontainer">Starters
-              <input type="checkbox" name="starter" checked value="s">
-              <span class="checkmark fas" ></span>
-            </label>
-
-            <label class="fcontainer">Main-Course
-              <input type="checkbox" name="main" checked value="m">
-              <span class="checkmark fas" ></span>
-            </label>
-
-            <label class="fcontainer">Desserts
-              <input type="checkbox" name="dessert" checked value="d">
-              <span class="checkmark fas" ></span>
-            </label>
-
-
-          </div>
-          <div class="col-lg-4 text-left">
-            <h5 class="font-weight-bold">Spiciness</h5>
-            <label class="fcontainer spicy">Regular
-              <input type="checkbox" name="spicy" checked value="1">
-              <span class="checkmark fas"></span>
-            </label>
-
-            <label class="fcontainer spicy">Spicy
-              <input type="checkbox" name="spicy" checked value="2">
-              <span class="checkmark fas"></span>
-            </label>
-
-            <label class="fcontainer spicy">Extra-spicy
-              <input type="checkbox" name="spicy" checked value="4">
-              <span class="checkmark fas"></span>
-            </label>
-
-          </div>
-        </div>
+    <div class="container about mt-5 mb-5 p-5 bg-white">
+      <div class="text-center p-5">
+        <img src="./img/logo-i.png" alt="" height="150px">
       </div>
+      <h1 class="title text-center">Contact</h1>
+      <div class="container">
+            <h4>Jacks</h4>
+            <div class="container">
+                <iframe src="http://maps.google.com?q=Bangalore&output=embed" style="border:0" allowfullscreen="" frameborder="0" height="250" width="100%"></iframe>
+            </div>
+            <strong>Contact</strong><br><strong>Office:</strong> 123456789
+            <hr>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-6">
+              <form role="form" id="Formulario" action="../php/contacto2.php" method="POST">
+                <div class="form-group">
+                  <label class="control-label" for="Name">Name</label>
+                  <input type="text" class="form-control" id="Name" name="Name" placeholder="Enter your Name" required autofocus />
+                </div>
+                <div class="form-group">
+                  <label class="control-label" for="Reason">Reason for Contact</label>
+                  <select name="Motivo" class="form-control">
+                    <option value="Consulta General">General</option>
+                    <option value="Realizar Pedido">Enquiry</option>
+                    <option value="Informe un problema">Feedback</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label class="control-label" for="Empresa">Empresa</label>
+                  <input type="text" class="form-control" id="Empresa" name="Empresa" placeholder="Introduzca el nombre de su empresa" required />
+                </div>
+                <div class="form-group">
+                  <label class="control-label" for="email">Contact Mail Address</label>
+                  <input type="email" class="form-control" id="email" name="email" placeholder="Enter Email Address..." required />
+                </div>
+                <div class="form-group">
+                  <label class="control-label" for="Message">Message</label>
+                  <textarea rows="5" cols="30" class="form-control" id="Message" name="Message" placeholder="Enter Message" required ></textarea>
+                </div>
+                <div class="form-group">
+                  <input type="submit" class="btn btn-dark" value="Send">
+                  <input type="reset" class="btn btn-default" value="Reset">
+                </div>
+                <div id="respuesta" style="display: none;"></div>
+              </form>
+            </div>
+            <div class="col-12 col-md-6 text-md-right">
+              <h3 class="text-center text-md-right">Physical Address</h3>
+              <p>First 2nd Street
+                <br>Third 4th Block
+                <br>Sqaure Box Area
+              </p>
+              <p>
+                <a href="tel:09876543210">098 7654 3210</a>
+              </p>
+              <p>
+                <a href="mailto:letme@eat.com">letme@eat.com</a>
+              </p>
+            </div>
+          </div>
+        </div>
     </div>
-    <div class="container">
-      <div class="dishes row equal-height">
 
-      </div>
-
-    </div>
     <div class="footer">
       <div class="container-fluid">
   			<div class="row">
@@ -179,6 +180,5 @@
     <script src="./js/jquery.min.js" charset="utf-8"></script>
     <script src="./js/popper.js" charset="utf-8"></script>
     <script src="./js/bootstrap.min.js" charset="utf-8"></script>
-    <script src="./js/script.js" charset="utf-8"></script>
   </body>
 </html>
