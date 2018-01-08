@@ -10,7 +10,7 @@ filter = {
 };
 var dishes;
 $(function() {
-  $.get("http://127.0.0.1:3000/data/dishes", {} , function(data){
+  $.get("http://127.0.0.1:8000/data/dishes", {} , function(data){
     console.log('data');
     dishes = JSON.parse(data);
     updateDishes(dishes);
