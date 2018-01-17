@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="./css/webfont/css/fontawesome-all.min.css">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/jquery.min.js" charset="utf-8"></script>
+    <script src="./js/popper.js" charset="utf-8"></script>
+    <script src="./js/bootstrap.min.js" charset="utf-8"></script>
   </head>
   <body>
     <!-- Image and text -->
@@ -41,85 +44,76 @@
         </ul>
       </div>
     </nav>
-    <div class="container p-5">
-    	<div class="types">
-    	<div id="typeTableSlider" class="carousel slide" data-ride="carousel">
-		  <ol class="carousel-indicators">
-		    <li data-target="#typeTableSlider" data-slide-to="0" class="active"></li>
-		    <li data-target="#typeTableSlider" data-slide-to="1"></li>
-		    <li data-target="#typeTableSlider" data-slide-to="2"></li>
-		  </ol>
-		  <div class="carousel-inner">
-		    <div class="carousel-item active">
-          <img src="./img/bool.jpg" alt="pool">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>...</h5>
-            <p>...</p>
-        </div>
-        <div class="carousel-item">
-          <img src="./img/roof.jpg" alt="rooftop">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>...</h5>
-            <p>...</p>
-        </div>
-        <div class="carousel-item">
-  			  <img src="./img/base.png" alt="base">
-  			  <div class="carousel-caption d-none d-md-block">
-  			    <h5>...</h5>
-  			    <p>...</p>
-			  </div>
-			</div>
-			
-			</div>
-		  </div>
-		  <a class="carousel-control-prev" href="#typeTableSlider" role="button" data-slide="prev">
-		    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-		    <span class="sr-only">Previous</span>
-		  </a>
-		  <a class="carousel-control-next" href="#typeTableSlider" role="button" data-slide="next">
-		    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-		    <span class="sr-only">Next</span>
-		  </a>
-		</div>
-    		
-    	</div>
-	    <table class="table-sm table-bordered table-center">
-			<form method="POST">
-				<tr>
-					<td>Booking name: </td>
-					<td><input type="text" name="bname" required></td>
-				    </tr>
-				<tr>
-					<td>Phone number</td>
-					<td><input type="number" name="number" min=1000000000 maxlength="10" required></td>
-				</tr>
-				<tr>
-					<td>Number of person:</td>
-					<td><input type="number" value=2 max=8 min=2 name="number" required></td>
-				</tr>
-				<tr>
-					<td>Table of your choice:</td>
-					<td><select required>
-						<option value="BASE">Basement</option>
-						<option value="PLAY">Pool Table</option>
-						<option value="ROOF">Roof Top</option>
-					</select></td>
-				</tr>
-				<tr>
-					<td>Booking timings</td>
-					<td>
-					<input type="radio" name="time" value="12" id="123pm"><label for="123pm">12-03pm</label></input>
-					<input type="radio" name="time" value="12" id="36pm"><label for="36pm">06-09PM</label></input>
-					<input type="radio" name="time" value="12" id="1001am"><label for="1001am">10-01AM</label></input>				
-		            </td>
-				</tr>
-				<tr class="text-center">
-					<td><button type="submit" class="btn btn-dark">Reserve</button></td>
-					<td><button type="reset" class="btn btn-dark">Clear</button></td>
-				</tr>
-				
-		</form>
-		</table>    	
+
+    <div class="">
+      <div class="relative">
+
+
+        <div class="types">
+          	<div id="typeTableSlider" class="carousel slide" data-ride="carousel">
+
+      		  <div class="carousel-inner">
+      		    <div class="carousel-item active">
+                <img src="./img/sl1.jpg" alt="pool" class="g-scale">
+
+            </div>
+              <div class="carousel-item">
+                <img src="./img/sl2.jpg" alt="rooftop" class="g-scale">
+
+              </div>
+              <div class="carousel-item">
+        			  <img src="./img/sl3.jpg" alt="base" class="g-scale">
+
+      			</div>
+
+      			</div>
+
+
+      		</div>
+      </div>
+    <div class="reservet">
+      <table class="table-sm table-bordered table-center">
+        <thead>
+          <th colspan="2" class="text-center"><h2>Make Reservations</h2></th>
+        </thead>
+        <form >
+          <tr>
+            <td>Booking name: </td>
+            <td><input type="text" class="form-control"  required id="bname" name="bname" required></td>
+          </tr>
+          <tr>
+            <td>Phone number</td>
+            <td><input type="number" class="form-control" required id="bnum"  name="number" min=1000000000 maxlength="10" required></td>
+          </tr>
+          <tr>
+            <td>Number of person:</td>
+            <td><input type="number" class="form-control"  required id="bcount" value=2 max=8 min=2 name="number" required></td>
+          </tr>
+          <tr>
+            <td>Table of your choice:</td>
+            <td><select required class="form-control" required id="barea">
+              <option value="Common Service">Common Service</option>
+              <option value="Pool Side">Pool Side</option>
+              <option value="Roof Top">Roof Top</option>
+            </select></td>
+          </tr>
+          <tr>
+            <td>Booking timings</td>
+            <td>
+              <input type="radio" id="btime" name="time" value="12-03PM" id="123pm"><label for="123pm">12-03pm</label></input>
+              <input type="radio" id="btime" name="time" value="06-09PM" id="36pm"><label for="36pm">06-09PM</label></input>
+              <input type="radio" id="btime" name="time" value="10-01AM" id="1001am"><label for="1001am">10-01AM</label></input>
+            </td>
+          </tr>
+          <tr class="text-center">
+            <td><button type="submit" class="btn btn-dark" onsubmit="reserve()">Reserve</button></td>
+            <td><button type="reset" class="btn btn-dark">Clear</button></td>
+          </tr>
+
+        </form>
+      </table>
+    </div>
+      </div>
     </div>
 
     <div class="footer">
@@ -193,11 +187,45 @@
         </div>
   		</div>
     </div>
-    <script src="./js/jquery.min.js" charset="utf-8"></script>
-    <script src="./js/popper.js" charset="utf-8"></script>
-    <script src="./js/bootstrap.min.js" charset="utf-8"></script>
+    <script type="text/javascript">
+    function reserve() {
+      // caption
+
+      $("#name").html($('#bname').val());
+      $("#count").html($('#bcount').val());
+      $("#area").html($('#barea').val());
+      $("#time").html($('#btime:checked').val());
+      $('#reserveSuccess').modal('show');
+    }
+
+    jQuery(document).ready(function () {
+      $('form').on('submit', function() {
+        reserve();
+        return false;
+      })
+
+    })
+    </script>
+    <div class="modal fade" id="reserveSuccess" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Reservation Successful</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <b>Thank You, &nbsp;<i><span id="name"></span></i>  </b><br>
+            Your reservation for <span id="count"></span> in the <span id="area"></span> area at <span id="time"></span> has been Successfuly recieved.
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <!-- <button type="button" class="btn btn-primary"></button> -->
+          </div>
+        </div>
+      </div>
+    </div>
+
   </body>
 </html>
-
-
-
