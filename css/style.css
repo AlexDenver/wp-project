@@ -166,3 +166,9 @@ img.g-scale:hover, .dish:hover img.g-scale{
     border-bottom: 5px solid #343a40;
     box-shadow: 0 0 20px 1px #343a40;
 }
+.dish-attr{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+}

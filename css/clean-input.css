@@ -135,9 +135,9 @@ input:checked + .slider:before {
 }
 .dish .row{
   background: #e3e6e6;
-  margin: -20px;
+  margin: 0;
   padding: 15px;
-  margin-top: -10px;
+  margin-top: 0;
 }
 i.fas.fa-fire {
     margin: 3px;

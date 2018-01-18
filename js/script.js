@@ -130,12 +130,12 @@ function putDishes(data){
     var cardHtml = `<div class="mb-4 col-12 col-sm-6 col-md-4">
       <div class="dish card">
         <img class="card-img-top g-scale" src="./img/dishes/${data[i].img}"  alt="Chilly">
-        <div class="card-body">
+        <div class="card-body relative">
           <span class="font-weight-bold">${data[i].name}</span>
           <span class="badge badge-dark float-right ml-2"><i class="fas fa-star"></i> ${data[i].rating}/5</span>
           <img src="./img/${data[i].veg?'':'n'}veg.png" height="20px" class="g-scale float-right" />
           <p>${data[i].description}.</p>
-          <div class="row text-center">
+          <div class="row dish-attr text-center">
             <div class="col-4">
               <span class="badge badge-dark p-1">₹${data[i].price}</span>
             </div>

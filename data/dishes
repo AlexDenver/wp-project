@@ -11,11 +11,61 @@
   },{
     "name": "Gobi Manchurian",
     "servings": 2,
-    "description": "Gobi Manchurian is a popular Indo-Chinese dish of chicken.",
+    "description": "Gobi Manchurian is a popular Indo-Chinese veg dish.",
     "price": 175,
     "veg": true,
     "type": "starter",
     "spicy": 4,
     "rating": 3,
     "img": "1gobi.jpg"
+  },{
+    "name": "Greek Lemon Chicken",
+    "servings": 2,
+    "description": "One-pan Greek chicken roasted with potatoes and green beans, requires minimal attention…",
+    "price": 220,
+    "veg": false,
+    "type": "starter",
+    "spicy": 4,
+    "rating": 4,
+    "img": "3greek.jpg"
+  },{
+    "name": "Chicken Kiev",
+    "servings": 2,
+    "description": "Chicken Kiev is a dish of chicken fillet pounded and rolled around cold butter…",
+    "price": 280,
+    "veg": false,
+    "type": "starter",
+    "spicy": 1,
+    "rating": 5,
+    "img": "4kiev.jpg"
+  },{
+    "name": "Tomato Bruschetta",
+    "servings": 1,
+    "description": "Bruschetta is an antipasto from Italy consisting of grilled bread rubbed with garlic and topped with olive oil and salt…",
+    "price": 180,
+    "veg": true,
+    "type": "main",
+    "spicy": 2,
+    "rating": 4,
+    "img": "5bruschetta.jpg"
+  },{
+    "name": "Choco Trifle",
+    "servings": 1,
+    "description": "Trifle in English cuisine is a dessert made with fruit, a thin layer of sponge fingers soaked in sherry or another fortified wine, and custard…",
+    "price": 150,
+    "veg": true,
+    "type": "dessert",
+    "spicy": 0,
+    "rating": 5,
+    "img": "6triffle.jpg"
+  },{
+    "name": "Chicken Pasta",
+    "servings": 2,
+    "description": "dish originally from Italy consisting of dough made from durum wheat and water, extruded or stamped into various shapes and typically cooked in boiling water…",
+    "price": 250,
+    "veg": false,
+    "type": "main",
+    "spicy": 2,
+    "rating": 4,
+    "img": "7chipasta.jpg"
     }]
