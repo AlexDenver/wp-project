@@ -32,7 +32,7 @@
     "name": "Chicken Kiev",
     "servings": 2,
     "description": "Chicken Kiev is a dish of chicken fillet pounded and rolled around cold butter…",
-    "price": 280,
+    "price": 1280,
     "veg": false,
     "type": "starter",
     "spicy": 1,
@@ -59,7 +59,7 @@
     "rating": 5,
     "img": "6triffle.jpg"
   },{
-    "name": "Chicken Pasta",
+    "name": "Cihicken Pasta",
     "servings": 2,
     "description": "dish originally from Italy consisting of dough made from durum wheat and water, extruded or stamped into various shapes and typically cooked in boiling water…",
     "price": 250,
@@ -68,4 +68,24 @@
     "spicy": 2,
     "rating": 4,
     "img": "7chipasta.jpg"
+    },{
+      "name": "Ultimate Tofu Burrito",
+      "servings": 2,
+      "description": "Tofu scrambles just like eggs and with some spices, even non-vegans won't notice the…",
+      "price": 180,
+      "veg": true,
+      "type": "main",
+      "spicy": 1,
+      "rating": 5,
+      "img": "8tofu.jpg"
+    },{
+      "name": "Chocolate Ice Cream",
+      "servings": 1,
+      "description": "Turn the water from a can of chickpeas, aquafaba, into a delicious, vegan dark chocolate ice cream with this clever, 5-ingredient recipe…",
+      "price": 80,
+      "veg": true,
+      "type": "dessert",
+      "spicy": 0,
+      "rating": 5,
+      "img": "9choco.jpg"
     }]

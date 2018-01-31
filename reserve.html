@@ -55,19 +55,14 @@
       		  <div class="carousel-inner">
       		    <div class="carousel-item active">
                 <img src="./img/sl1.jpg" alt="pool" class="g-scale">
-
-            </div>
+              </div>
               <div class="carousel-item">
                 <img src="./img/sl2.jpg" alt="rooftop" class="g-scale">
-
               </div>
               <div class="carousel-item">
         			  <img src="./img/sl3.jpg" alt="base" class="g-scale">
-
+    			     </div>
       			</div>
-
-      			</div>
-
 
       		</div>
       </div>
@@ -79,19 +74,19 @@
         <form >
           <tr>
             <td>Booking name: </td>
-            <td><input type="text" class="form-control"  required id="bname" name="bname" required></td>
+            <td><input type="text" class="form-control" autocomplete="off"  id="bname" name="bname" ></td>
           </tr>
           <tr>
             <td>Phone number</td>
-            <td><input type="number" class="form-control" required id="bnum"  name="number" min=1000000000 maxlength="10" required></td>
+            <td><input type="number" class="form-control"  id="bnum"  name="number" min="1000000000" maxlength="10" max="9999999999" oninvalid="setCustomValidity('Enter a Valid Mobile Number.')" onchange="try{setCustomValidity('')}catch(e){}" required></td>
           </tr>
           <tr>
             <td>Number of person:</td>
-            <td><input type="number" class="form-control"  required id="bcount" value=2 max=8 min=2 name="number" required></td>
+            <td><input type="number" class="form-control"   id="bcount" value=2 max=8 min=2 name="number" required></td>
           </tr>
           <tr>
             <td>Table of your choice:</td>
-            <td><select required class="form-control" required id="barea">
+            <td><select  class="form-control" required id="barea">
               <option value="Common Service">Common Service</option>
               <option value="Pool Side">Pool Side</option>
               <option value="Roof Top">Roof Top</option>
@@ -190,7 +185,11 @@
     <script type="text/javascript">
     function reserve() {
       // caption
-
+      p = /[0-9]/g;
+      if(p.test($('#bname').val())){
+        alert("Name cannot have Numbers");
+        return false;
+      }
       $("#name").html($('#bname').val());
       $("#count").html($('#bcount').val());
       $("#area").html($('#barea').val());
